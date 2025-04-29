@@ -3,10 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcevallosT3.Views.vSecundaria"
              Title="vSecundaria">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <Image Source="https://cdn-icons-png.flaticon.com/512/7039/7039832.png" 
+                   HeightRequest="150" HorizontalOptions="Center"/>
+
+            <Label x:Name="lblIdentificacion" 
+                   FontSize="20" TextColor="Azure"/>
+            <Label x:Name="lblNombres" 
+                   FontSize="20" TextColor="Azure"/>
+            <Label x:Name="lblApellidos" 
+                   FontSize="20" TextColor="Azure"/>
+            <Label x:Name="lblFecha" 
+                   FontSize="20" TextColor="Azure"/>
+            <Label x:Name="lblCorreo" 
+                   FontSize="20" TextColor="Azure"/>
+            <Label x:Name="lblSalario" 
+                   FontSize="20" TextColor="Azure"/>
+            <Label x:Name="lblAporte"
+                   FontSize="20" TextColor="Red"/>
+
+            <Button Text="Exportar a Archivo" 
+                    Clicked="Button_Clicked"
+                    BackgroundColor="Green" TextColor="White" FontSize="18"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
